@@ -1,4 +1,4 @@
-# Standards: 0.1
+# Standards: 1.2
 ---
 # @var dnsmasq_nameservers:description: List of upstream name servers
 dnsmasq_nameservers:
