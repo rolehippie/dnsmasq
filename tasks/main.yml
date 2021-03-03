@@ -1,0 +1,34 @@
+# Standards: 0.1
+---
+- name: Install required packages
+  loop:
+    - dnsmasq
+  package:
+    name: "{{ item }}"
+    state: present
+  tags:
+    - dnsmasq
+
+- name: Write server config
+  notify:
+    - Restart dnsmasq
+  template:
+    src: config.j2
+    dest: /etc/dnsmasq.conf
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
+  tags:
+    - dnsmasq
+
+- name: Start dnsmasq service
+  systemd:
+    name: dnsmasq
+    state: started
+    daemon_reload: True
+    masked: False
+    enabled: True
+  tags:
+    - dnsmasq
+
+...
