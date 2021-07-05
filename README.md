@@ -13,6 +13,7 @@ Building and improving this Ansible role have been sponsored by my employer **Pr
 ## Table of content
 
 * [Default Variables](#default-variables)
+  * [dnsmasq_addresses](#dnsmasq_addresses)
   * [dnsmasq_interfaces](#dnsmasq_interfaces)
   * [dnsmasq_listen_address](#dnsmasq_listen_address)
   * [dnsmasq_nameservers](#dnsmasq_nameservers)
@@ -23,6 +24,16 @@ Building and improving this Ansible role have been sponsored by my employer **Pr
 ---
 
 ## Default Variables
+
+### dnsmasq_addresses
+
+List of addresses to map dns for
+
+#### Default value
+
+```YAML
+dnsmasq_addresses: []
+```
 
 ### dnsmasq_interfaces
 

@@ -11,4 +11,7 @@ dnsmasq_listen_address: []
 # @var dnsmasq_interfaces:description: List of interfaces to bind to
 dnsmasq_interfaces: []
 
+# @var dnsmasq_addresses:description: List of addresses to map dns for
+dnsmasq_addresses: []
+
 ...

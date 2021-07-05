@@ -10,7 +10,15 @@ interface={{ dnsmasq_interfaces | join(',') }}
 no-resolv
 no-poll
 expand-hosts
+{% if dnsmasq_nameservers | default(False) %}
 
 {% for item in dnsmasq_nameservers %}
 server={{ item }}
 {% endfor %}
+{% endif %}
+{% if dnsmasq_addresses | default(False) %}
+
+{% for item in dnsmasq_addresses %}
+address=/{{ item.domain }}/{{ item.address }}
+{% endfor %}
+{% endif %}
