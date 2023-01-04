@@ -1,6 +1,6 @@
 # dnsmasq
 
-[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/dnsmasq) [![Testing Build](https://github.com/rolehippie/dnsmasq/workflows/testing/badge.svg)](https://github.com/rolehippie/dnsmasq/actions?query=workflow%3Atesting) [![Readme Build](https://github.com/rolehippie/dnsmasq/workflows/readme/badge.svg)](https://github.com/rolehippie/dnsmasq/actions?query=workflow%3Areadme) [![Galaxy Build](https://github.com/rolehippie/dnsmasq/workflows/galaxy/badge.svg)](https://github.com/rolehippie/dnsmasq/actions?query=workflow%3Agalaxy) [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/dnsmasq)](https://github.com/rolehippie/dnsmasq/blob/master/LICENSE)
+[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/dnsmasq) [![General Workflow](https://github.com/rolehippie/dnsmasq/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/dnsmasq/actions/workflows/general.yml) [![Readme Workflow](https://github.com/rolehippie/dnsmasq/actions/workflows/readme.yml/badge.svg)](https://github.com/rolehippie/dnsmasq/actions/workflows/readme.yml) [![Galaxy Workflow](https://github.com/rolehippie/dnsmasq/actions/workflows/galaxy.yml/badge.svg)](https://github.com/rolehippie/dnsmasq/actions/workflows/galaxy.yml) [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/dnsmasq)](https://github.com/rolehippie/dnsmasq/blob/master/LICENSE)
 
 Ansible role to install and configure dnsmasq DNS caching server.
 
@@ -73,7 +73,7 @@ dnsmasq_nameservers:
 
 ## Dependencies
 
-- [rolehippie.docker](https://github.com/rolehippie/docker)
+- None
 
 ## License
 
