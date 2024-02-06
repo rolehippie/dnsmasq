@@ -1,9 +1,8 @@
-# Standards: 1.2
 ---
 - name: Install required packages
   loop:
     - dnsmasq
-  package:
+  ansible.builtin.package:
     name: "{{ item }}"
     state: present
   tags:
@@ -12,7 +11,7 @@
 - name: Write server config
   notify:
     - Restart dnsmasq
-  template:
+  ansible.builtin.template:
     src: config.j2
     dest: /etc/dnsmasq.conf
     owner: root
@@ -22,7 +21,7 @@
     - dnsmasq
 
 - name: Start dnsmasq service
-  systemd:
+  ansible.builtin.systemd:
     name: dnsmasq
     state: started
     daemon_reload: True
