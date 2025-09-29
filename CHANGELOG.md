@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.0](https://github.com/rolehippie/dnsmasq/compare/v2.0.0...v2.1.0) (2025-09-29)
+
+
+### Features
+
+* add optional a port to bind to ([1839711](https://github.com/rolehippie/dnsmasq/commit/1839711d74f5bad53936ce7b2db9864a848aebb8))
+* apply new repo structure and update linting and integrate noble ([c1d61af](https://github.com/rolehippie/dnsmasq/commit/c1d61af546f2ac408877828f1d70fda70d452727))
+
 ## [2.0.0](https://github.com/rolehippie/dnsmasq/compare/v1.0.0...v2.0.0) (2024-02-12)
 
 
