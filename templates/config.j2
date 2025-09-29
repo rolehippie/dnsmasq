@@ -1,8 +1,8 @@
-{% if dnsmasq_listen_address | default(False) %}
+{% if dnsmasq_listen_address | length > 0 %}
 listen-address={{ dnsmasq_listen_address | join(',') }}
 {% else %}
 bind-interfaces
-{% if dnsmasq_interfaces | default(False) %}
+{% if dnsmasq_interfaces | length > 0 %}
 interface={{ dnsmasq_interfaces | join(',') }}
 {% endif %}
 {% endif %}
@@ -10,13 +10,13 @@ interface={{ dnsmasq_interfaces | join(',') }}
 no-resolv
 no-poll
 expand-hosts
-{% if dnsmasq_nameservers | default(False) %}
+{% if dnsmasq_nameservers | length > 0 %}
 
 {% for item in dnsmasq_nameservers %}
 server={{ item }}
 {% endfor %}
 {% endif %}
-{% if dnsmasq_addresses | default(False) %}
+{% if dnsmasq_addresses | length > 0 %}
 
 {% for item in dnsmasq_addresses %}
 address=/{{ item.domain }}/{{ item.address }}

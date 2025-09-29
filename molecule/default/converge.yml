@@ -1,6 +1,9 @@
 ---
 - name: Converge
   hosts: all
+  vars:
+    dnsmasq_listen_address:
+      - 127.0.0.1
   roles:
     - role: rolehippie.dnsmasq
 
