@@ -6,6 +6,9 @@ bind-interfaces
 interface={{ dnsmasq_interfaces | join(',') }}
 {% endif %}
 {% endif %}
+{% if dnsmasq_listen_port is not none %}
+port={{ dnsmasq_listen_port }}
+{% endif %}
 
 no-resolv
 no-poll

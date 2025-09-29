@@ -20,6 +20,7 @@ Building and improving this Ansible role have been sponsored by my current and p
   - [dnsmasq_addresses](#dnsmasq_addresses)
   - [dnsmasq_interfaces](#dnsmasq_interfaces)
   - [dnsmasq_listen_address](#dnsmasq_listen_address)
+  - [dnsmasq_listen_port](#dnsmasq_listen_port)
   - [dnsmasq_nameservers](#dnsmasq_nameservers)
 - [Discovered Tags](#discovered-tags)
 - [Dependencies](#dependencies)
@@ -62,6 +63,16 @@ List of addresses to bind to
 
 ```YAML
 dnsmasq_listen_address: []
+```
+
+### dnsmasq_listen_port
+
+Optional a custom port to listen to
+
+#### Default value
+
+```YAML
+dnsmasq_listen_port:
 ```
 
 ### dnsmasq_nameservers

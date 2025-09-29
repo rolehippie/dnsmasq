@@ -7,6 +7,9 @@ dnsmasq_nameservers:
 # @var dnsmasq_listen_address:description: List of addresses to bind to
 dnsmasq_listen_address: []
 
+# @var dnsmasq_listen_port:description: Optional a custom port to listen to
+dnsmasq_listen_port:
+
 # @var dnsmasq_interfaces:description: List of interfaces to bind to
 dnsmasq_interfaces: []
 
