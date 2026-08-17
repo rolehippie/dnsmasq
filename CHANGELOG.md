@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.4.0](https://github.com/rolehippie/dnsmasq/compare/v2.3.0...v2.4.0) (2026-08-17)
+
+### Dependencies
+
+* **minor:** update dependency pipx:ansible-lint to v26.8.0 ([#52](https://github.com/rolehippie/dnsmasq/issues/52)) ([572df4d](https://github.com/rolehippie/dnsmasq/commit/572df4d5da0d5d19eb4d2e43047adf1f8a405213))
+* **minor:** update dependency pipx:molecule to v26.8.0 ([#53](https://github.com/rolehippie/dnsmasq/issues/53)) ([4cf372b](https://github.com/rolehippie/dnsmasq/commit/4cf372b5715e90694776a2679659492db06b8fb4))
+* **patch:** update dependency pipx:ansible-core to v2.21.3 ([#50](https://github.com/rolehippie/dnsmasq/issues/50)) ([ab8acb8](https://github.com/rolehippie/dnsmasq/commit/ab8acb8610d5d20a5321d08e19a189c07fefdcd8))
+* **patch:** update dependency pre-commit to v4.6.2 ([#51](https://github.com/rolehippie/dnsmasq/issues/51)) ([64d79aa](https://github.com/rolehippie/dnsmasq/commit/64d79aa1baad60ddcb6a0262e483f1cd686589fe))
+
 ## [2.3.0](https://github.com/rolehippie/dnsmasq/compare/v2.2.0...v2.3.0) (2026-08-10)
 
 ### Dependencies
