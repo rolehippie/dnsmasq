@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.4.1](https://github.com/rolehippie/dnsmasq/compare/v2.4.0...v2.4.1) (2026-08-31)
+
+### Dependencies
+
+* **patch:** update dependency pipx:ansible-doctor to v8.4.1 ([#54](https://github.com/rolehippie/dnsmasq/issues/54)) ([531ace4](https://github.com/rolehippie/dnsmasq/commit/531ace4fe8e4e9f48d7b33261437a8417e874364))
+
 ## [2.4.0](https://github.com/rolehippie/dnsmasq/compare/v2.3.0...v2.4.0) (2026-08-17)
 
 ### Dependencies
